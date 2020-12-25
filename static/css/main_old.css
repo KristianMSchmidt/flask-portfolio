@@ -1,5 +1,6 @@
 /* Open terminal and type: "npm run sass" to get CCS compilation going
 /* The npm and sass setup is explained here: https://www.youtube.com/watch?v=gYzHS-n2gqU */
+/*#eece1a;*/
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -276,8 +277,8 @@ main#home h1 {
   grid-template-areas:
     "bioimage bio bio"
     "job1 job2 job3";
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr [3];
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .about-info .bio-image {
@@ -286,7 +287,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #55b4b0 3px solid;
+  border: white 3px solid; /* #55b4b0 3px solid;*/
 }
 
 .about-info .bio {
@@ -294,7 +295,7 @@ main#home h1 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: bio;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .about-info .job-1 {
@@ -325,8 +326,8 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.9rem;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr [3];
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 3em;
 }
 
@@ -412,15 +413,15 @@ main#home h1 {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr [4];
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr [3];
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -473,8 +474,8 @@ main#home h1 {
     grid-template-columns: 1fr;
   }
   .projects {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr [2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -494,4 +495,3 @@ main#home h1 {
     grid-template-columns: 1fr;
   }
 }
-/*# sourceMappingURL=main.css.map */
