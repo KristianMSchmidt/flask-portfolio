@@ -104,7 +104,7 @@ main {
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .job-1 {
@@ -129,7 +129,7 @@ main {
 // Work/Projects
 .projects {
   display: grid;
-  grid-gap: 0.9rem;
+  grid-gap: 2.9rem;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 3em;
   img {
@@ -140,6 +140,17 @@ main {
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
+    }
+  }
+  .project {
+    height: 100%;
+    border-collapse: collapse;
+    display: table;
+    .project-links {
+      display: none;
+      display: table-row;
+      vertical-align: bottom;
+      height: 1px;
     }
   }
 }
