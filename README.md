@@ -1,5 +1,5 @@
 # Online Portfolio
 
-An online portfoli showing some of my work. Webdesign adopted (with permission) from Traversy Media.
+An online portfolio showing some of my work.
 
 http://kristianmschmidt.pythonanywhere.com/portfolio
