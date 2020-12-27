@@ -49,13 +49,13 @@ h3 {
 a {
   color: #fff;
   text-decoration: none;
-}
 
-.list-link {
-  text-decoration: underline;
-}
-.list-link:hover {
-  color: #55b4b0;
+  &.list-link {
+    text-decoration: underline;
+  }
+  &.list-link:hover {
+    color: #55b4b0;
+  }
 }
 
 header {
