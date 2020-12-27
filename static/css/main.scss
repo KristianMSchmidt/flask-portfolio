@@ -51,6 +51,13 @@ a {
   text-decoration: none;
 }
 
+.list-link {
+  text-decoration: underline;
+}
+.list-link:hover {
+  color: #55b4b0;
+}
+
 header {
   position: fixed;
   z-index: 2;
