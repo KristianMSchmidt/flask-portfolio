@@ -1,6 +1,6 @@
 # Setup instuctions for Flask in Visual Studio Code
 # 1) Open folder with flask project
-# 2) In therminal: "pip install flask" (if necessary)
+# 2) In terminal: "pip install flask" (if necessary)
 # 3) In terminal: "python app.py"
 
 from flask import Flask, render_template, request
