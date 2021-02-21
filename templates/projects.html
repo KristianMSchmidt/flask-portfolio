@@ -1,21 +1,45 @@
-{% extends 'base.html' %}
-{% block title %}View My Work{% endblock title %}
-{% block main %}
+{% extends 'base.html' %} {% block title %}View My Work{% endblock title %} {% block main %}
 <main id="work">
-    
-    <h1 class="md-heading">My 
+
+    <h1 class="md-heading">My
         <span class="text-secondary">Projects</span>
     </h1><br>
 
     <h2 class="sm-heading">
-        1. Games & Algorithms (Flask Web Apps)
+        1. Full-Stack Database Projects
+    </h2>
+    <div class="projects big">
+        <div class="project">
+            <h3 class="text-primary">BUG TRACKER</h3>
+            <p>This is a ticket tracking system that could be used by, e.g., a sofware company to keep track of employees, projects and tickets. The program features multi-role authentication and authorization, demo-login and an automated notification system.
+                I've build this project from scratch, including relational database design and a responsive front-end.
+            </p>
+            <p>The back-end is build with (object-oriented) PHP, raw SQL and a MySql-database. On the front-end, I've used plain HTML, CSS and JS. For the styling of a few components (tables and pop-ups) I've used a light-weight CSS-library, but the rest
+                is build with vanilla technologies, including the CSS flex-box model.
+            </p>
+            <p>If you only visit once, I recommend that you log in 'Demo Admin'.</p>
+            <p>NB: The project is still under development. So far, I recommend using Chrome. </p>
+
+            <div class="project-links">
+                <a href="https://kristiansbugtracker.000webhostapp.com/view/pages/demo_login.php" target="_blank" class="btn-light">
+                    <i class="fas fa-eye"></i> Web App
+                </a>
+                <a href="https://github.com/KristianMSchmidt/bug_tracker" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="sm-heading">
+        2. Games & Algorithms (Flask Web Apps)
     </h2>
     <div class="projects small">
         <div class="project">
             <h3 class="text-primary">PUZZLES AND SEARCH</h3>
             <p>Compare the performance of four different search algorithms as they solve 8- and 15-puzzles.</p>
-            <p>Algorithms written in Python. HTML, CSS and JS on the front-end.</p>
-            <div class = "project-links">
+            <p>Algorithms and data structues coded up in Python. HTML, CSS and JS on the front-end.</p>
+            <div class="project-links">
                 <a href="http://kristianmschmidt.pythonanywhere.com/puzzle" target="_blank" class="btn-light">
                     <i class="fas fa-eye"></i> Web App
                 </a>
@@ -27,8 +51,8 @@
         <div class="project">
             <h3 class="text-primary">FAST SODUKO SOLVER</h3>
             <p>A speed-uptimized sudoku solver using backtracking search and an arc-consistency algorithm.</p>
-            <p>Algorithms written in Python. HTML, CSS and JS on the front-end.</p>
-            <div class = "project-links">
+            <p>Algorithms and data structues coded up in Python. HTML, CSS and JS on the front-end.</p>
+            <div class="project-links">
                 <a href="http://kristianmschmidt.pythonanywhere.com/sudoku" target="_blank" class="btn-light">
                     <i class="fas fa-eye"></i> Web App
                 </a>
@@ -40,41 +64,12 @@
         <div class="project">
             <h3 class="text-primary">2048 AI-PLAYER</h3>
             <p>An AI-player for the classic 2048 game. AI uses mini-max search and different heuristics.</p>
-            <p>Algorithms written in Python. HTML, CSS and JS on the front-end.</p>
-            <div class = "project-links">
+            <p>Algorithms and data structues coded up in Python. HTML, CSS and JS on the front-end.</p>
+            <div class="project-links">
                 <a href="http://kristianmschmidt.pythonanywhere.com/twentyfortyeight" target="_blank" class="btn-light">
                     <i class="fas fa-eye"></i> Web App
                 </a>
                 <a href="https://github.com/KristianMSchmidt/2048-game-" class="btn-dark">
-                    <i class="fab fa-github"></i> Github
-                </a>
-            </div>
-        </div>        
-    </div>
-
-    <h2 class="sm-heading">
-        2. Full Stack Projects 
-    </h2>
-    <div class="projects big">
-        <div class="project">
-            <h3 class="text-primary">BUG TRACKER</h3>
-            <p>This is a ticket tracking system, that could be used by an IT company to keep
-                track of users, tickets, and projects. Features multi-role authentication and authorization,
-                a notification system and responsive front-end design.   
-
-                I've build this project from scratch, including relational database design. 
-
-            </p>
-            <p>Backend build with object-oriented PHP, raw SQL and a MySql-database. 
-                Front end build with HTML, CSS and JS.
-            </p>
-            <p>Recommended browser: Chrome</p> 
-
-            <div class = "project-links">
-                <a href="https://kristiansbugtracker.000webhostapp.com/view/pages/demo_login.php" target="_blank" class="btn-light">
-                    <i class="fas fa-eye"></i> Web App
-                </a>
-                <a href="https://github.com/KristianMSchmidt/bug_tracker" class="btn-dark">
                     <i class="fab fa-github"></i> Github
                 </a>
             </div>
